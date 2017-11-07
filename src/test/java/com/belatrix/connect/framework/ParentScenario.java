@@ -28,7 +28,7 @@ public class ParentScenario {
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME,"CB5A28Q2LU");
         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
-        cap.setCapability(MobileCapabilityType.APP, "/Users/bryanestrada/Documents/APKs/BxConnect_2.0.5.1.apk");
+        cap.setCapability(MobileCapabilityType.APP, "C:\\Users\\Micha Fea\\Documents\\apk\\Bx Connect_2.0.5.apk");
         cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.belatrixsf.connect");
         cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.belatrixsf.connect.ui.SplashActivity");
 
