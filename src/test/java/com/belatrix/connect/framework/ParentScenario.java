@@ -26,7 +26,8 @@ public class ParentScenario {
         String url = "http://localhost:4723/wd/hub";
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
-        cap.setCapability(MobileCapabilityType.DEVICE_NAME,"CB5A28Q2LU");
+        //cap.setCapability(MobileCapabilityType.DEVICE_NAME,"CB5A28Q2LU");
+	cap.setCapability(MobileCapabilityType.DEVICE_NAME,"emulator5554");
         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
         cap.setCapability(MobileCapabilityType.APP, "C:\\Users\\Micha Fea\\Documents\\apk\\Bx Connect_2.0.5.apk");
         cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.belatrixsf.connect");
