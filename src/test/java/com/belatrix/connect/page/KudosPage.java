@@ -21,8 +21,7 @@ public class KudosPage extends ParentPage {
             id("com.belatrixsf.connect:id/main_content");
     By BTN_BACK_PAGE = By.
             xpath("//android.view.ViewGroup/android.widget.ImageButton");
-    By BTN_DONE = By.
-            id("com.belatrixsf.connect:id/action_done");
+    By BTN_DONE = By.xpath("//android.widget.TextView[@content-desc=\"DONE\"]");
     By TXT_USER_NAME = By.
             id("com.belatrixsf.connect:id/contact_full_name");
     By SELECT_ACTION = By.

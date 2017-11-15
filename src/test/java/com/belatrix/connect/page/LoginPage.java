@@ -29,7 +29,7 @@ public class LoginPage extends ParentPage {
      * Refreshing App Problemns With 7.1.1 Android Version at moment to start the APP
      */
     public void takingSessionActivity () {
-        refreshWithSwipeTopBar();
+      //  refreshWithSwipeTopBar();
     }
 
 
@@ -42,6 +42,7 @@ public class LoginPage extends ParentPage {
         handlingWaitToElement(TXT_USER_NAME);
         hideTextSendKeys(TXT_USER_NAME,userName);
         sendKeys(TXT_PASSWORD, password);
+        clickAndroidBackButton();
         click(BTN_LOGIN);
     }
 

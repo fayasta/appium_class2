@@ -11,9 +11,12 @@ public class SideBarNavigation extends ParentPage{
     public SideBarNavigation(AppiumDriver driver) {
         super(driver);
     }
-
+/*
     By LOGOUT_OPTION = By.
             id("com.belatrixsf.connect:id/bottom_navigation_container");
+*/
+By LOGOUT_OPTION = By.
+        id("com.belatrixsf.connect:id/menu_logout");
 
     /**
      * This a method let me logout of my current session

@@ -13,4 +13,4 @@ Feature: Login with correct values
 
     Examples:
       | username  | password | completeName   | email                  | skypeId      | location |
-      | jexebio   | test     | Juan Exebio    | jexebio@belatrixsf.com | jexebioq     | Lima     |
+      | fayasta   | nando     | Fernando Ayasta   | fayasta@belatrixsf.com | fernando.ayasta2     | Lima     |
