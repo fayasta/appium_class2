@@ -21,15 +21,18 @@ public class ParentScenario {
     protected static KudosPage kudosPage;
     protected static SideBarNavigation sideBarNavigation;
     protected static AlertMessageTwoOptions alertMessageTwoOptions;
+    protected static EventsPage eventsPage;
+    protected static EventDetailPage eventDetailPage;
+
 
     public void startAndroid(){
         String url = "http://localhost:4723/wd/hub";
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
         //cap.setCapability(MobileCapabilityType.DEVICE_NAME,"CB5A28Q2LU");
-	cap.setCapability(MobileCapabilityType.DEVICE_NAME,"emulator5554");
-        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
-        cap.setCapability(MobileCapabilityType.APP, "C:\\Users\\Micha Fea\\Documents\\apk\\Bx Connect_2.0.5.apk");
+	cap.setCapability(MobileCapabilityType.DEVICE_NAME,"HT5B8BE00546");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0");
+        cap.setCapability(MobileCapabilityType.APP, "C:\\Users\\fayasta\\Desktop\\Appium_curso\\apk\\Bx_Connect_2.0.5.apk");
         cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.belatrixsf.connect");
         cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.belatrixsf.connect.ui.SplashActivity");
 
@@ -48,6 +51,10 @@ public class ParentScenario {
         kudosPage = new KudosPage(driver);
         sideBarNavigation = new SideBarNavigation(driver);
         alertMessageTwoOptions = new AlertMessageTwoOptions(driver);
+        eventsPage = new EventsPage(driver);
+        eventDetailPage = new EventDetailPage(driver);
+
+
     }
 
     protected void closeDriver() {
